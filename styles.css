@@ -64,3 +64,11 @@ ul {
 .todo-container:first-of-type {
   border-top: 1px solid #333;
 }
+
+.todo-text{
+  font-size: 1.4rem;
+}
+
+.todo-text-crossed {
+  text-decoration: line-through;
+}
