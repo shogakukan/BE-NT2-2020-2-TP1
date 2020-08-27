@@ -33,7 +33,7 @@ function addToList(todoName) {
   updateCounts();
 }
 
-function updateUncheckedChecked(){
+function updateUncheckedCheckers(){
   let checkers = document.getElementsByClassName("todo-checkbox");
   let count = 0;
   for (let i = 0; i < checkers.length; i++){
@@ -43,9 +43,10 @@ function updateUncheckedChecked(){
   }
   uncheckedCountSpan.innerHTML = count;
 }
+
 function updateCounts(){
   itemCountSpan.innerHTML = document.getElementsByClassName("todo-container").length;
-  updateUncheckedChecked();
+  updateUncheckedCheckers();
 }
 
 
@@ -86,6 +87,6 @@ function checkedAction(checked, id){
   } else {
     document.getElementById(id).nextSibling.classList.remove(classNames.TODO_TEXT_CROSSED);
   }
-  updateUncheckedChecked();
+  updateUncheckedCheckers();
 }
 
